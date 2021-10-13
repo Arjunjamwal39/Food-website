@@ -1,0 +1,39 @@
+body {
+    background-color: blanchedalmond;
+    
+}
+
+#r
+
+h4 {
+    text-align:center;
+    font-family: 'orange juice';
+    font-size: 250%;
+    color: black;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(135, 202, 140);
+  }
+
+.topnav a {
+    float: left;
+    color: #0f0909;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'SF Slapstick Comic Shaded';
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: rgb(19, 9, 9);
+  }
+

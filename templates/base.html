@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+    <head>
+        <title>
+            {% block title %}
+            {% endblock title %}
+        </title>
+        {% block styles %}
+        
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+        {% endblock styles %}
+    </head>
+    <body>
+        {% block logo %}
+        <img src="{% static 'images/logo2.png' %}" alt="logo" style="width: 100px; height: 100px;margin-left: 620px;">
+        <h4><b>Herby Eats</b></h4>
+        {% endblock logo %}
+        
+{% block navigationbar %}
+        <div class="topnav">
+            <a class="active" href="/index"> <i class="fa fa-home" aria-hidden="true" style="font-size: 27px;"></i> Home</a>
+            <a href="/practice"><i class="fa fa-cutlery" aria-hidden="true" style="font-size: 27px;"></i>  Menu</a>
+            <a href="#"> <i class="fa fa-sign-in" aria-hidden="true" style="font-size: 27px;"></i> Login</a>
+            <a href="/register"> <i class="fa fa-address-card-o" aria-hidden="true" style="font-size: 27px;"></i> Register now</a>
+            <a href="/about"> <i class="fa fa-phone" aria-hidden="true" style="font-size: 27px;"></i> About us</a></li>
+        </div>
+{% endblock navigationbar %} 
+        
+{% block content %}
+{% endblock content %}
+
+
+
+        
+    </body>
+</html>

@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(125, 168, 109);
+}#jun
+
+
+  
+
+
+.card:hover{
+
+    box-shadow: 0 100px 100px 0 rgba(0, 0, 0, 0.664);
+}
+
+.card{
+    background-color: rgb(144, 187, 189);
+}
+
+img{
+    border-radius: 20px;
+}
+
+
+

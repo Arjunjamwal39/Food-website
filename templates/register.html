@@ -1,0 +1,34 @@
+{% extends 'base1.html' %}
+
+{% block main %}
+
+<body style="background-color: rgb(201, 182, 182);">
+
+    
+    <div class="container-sm ">
+          <div class="p-4 m-4 col-lg-5 mx-auto border rounded bg-transparent border-secondary border-5 pt-5">
+            <h3 style="font-family: 'orange juice';font-size: 50px;"><b>Register Now!</b> </h3>
+            <form  action="/register/" method="POST">
+              {% csrf_token %}
+                  <table required>
+                      {{f}}
+                  </table>
+                    
+                   
+                <input type="submit" value="Submit">
+
+            </form>
+                            
+          </div>
+        
+
+    </div>
+{% if messages %}
+    {% for message in messages %}
+        <h3 class="{{message.tags}}" style="margin-left: 500px;font-family: 'orange juice';font-size: 33px;"><b>{{message}}</b></h3>
+    {% endfor %}
+{% endif %}
+
+
+{% endblock main %}
+</body>
